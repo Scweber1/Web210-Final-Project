@@ -1,0 +1,12 @@
+body {
+    font-family: 'Segoe UI', sans-serif;
+  }
+  
+  header h1, header small {
+    margin: 0;
+  }
+  
+  .card-title {
+    color: #004080;
+  }
+  
