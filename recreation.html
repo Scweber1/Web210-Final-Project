@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Recreation | Macon County</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="styles.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+      .resource-box {
+        background-color: #f8f9fa;
+        border: 1px solid #dee2e6;
+        border-radius: 0.5rem;
+        padding: 1.5rem;
+        margin-bottom: 1.5rem;
+        text-align: center;
+        transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+      }
+
+      .resource-box:hover {
+        transform: translateY(-0.25rem);
+        box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.05);
+      }
+
+      .resource-icon {
+        font-size: 3rem;
+        margin-bottom: 1rem;
+        color: #007bff;
+      }
+
+      .resource-title {
+        font-size: 1.25rem;
+        font-weight: bold;
+        color: #2c3e50;
+        margin-bottom: 0.5rem;
+      }
+
+      .mission-vision-box {
+        background-color: #e9ecef;
+        border-radius: 0.5rem;
+        padding: 1.5rem;
+        margin-bottom: 1.5rem;
+        color: #4a5568;
+      }
+
+      .mission-vision-title {
+        font-size: 1.5rem;
+        font-weight: bold;
+        color: #2c3e50;
+        margin-bottom: 1rem;
+      }
+    </style>
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+      <div class="container">
+        <a class="navbar-brand" href="#">Macon County</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarResponsive"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarResponsive">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="index.html">Home</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                href="#"
+                role="button"
+                data-bs-toggle="dropdown"
+              >
+                Government
+              </a>
+              <ul class="dropdown-menu">
+                <li>
+                  <a class="dropdown-item" href="departments.html"
+                    >Departments</a
+                  >
+                </li>
+                <li>
+                  <a class="dropdown-item" href="elected-officials.html"
+                    >Elected Officials</a
+                  >
+                </li>
+                <li>
+                  <a class="dropdown-item" href="public-records.html"
+                    >Public Records</a
+                  >
+                </li>
+              </ul>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown"
+                >Services</a
+              >
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="permits.html">Permits</a></li>
+                <li><a class="dropdown-item" href="utilities.html">Utilities</a></li>
+                <li>
+                  <a class="dropdown-item" href="waste-management.html">Waste Management</a>
+                </li>
+              </ul>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown"
+                >Community</a
+              >
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="parks.html">Parks</a></li>
+                <li><a class="dropdown-item" href="recreation.html">Recreation</a></li>
+                <li><a class="dropdown-item" href="events.html">Events</a></li>
+                <li>
+                  <a class="dropdown-item" href="public-schools.html">Public Schools</a>
+                </li>
+                <li><a class="dropdown-item" href="libraries.html">Libraries</a></li>
+              </ul>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown"
+                >Visitors</a
+              >
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="tourism.html">Tourism Info</a></li>
+                <li><a class="dropdown-item" href="attractions.html">Attractions</a></li>
+                <li><a class="dropdown-item" href="hiking.html">Hiking Trails</a></li>
+                <li><a class="dropdown-item" href="maps.html">Maps</a></li>
+                <li><a class="dropdown-item" href="travel.html">Travel Tips</a></li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="contact.html">Contact</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <header
+      class="masthead text-white text-center"
+      style="
+        background-image: url('images/recleaugue.jpg');
+        background-size: cover;
+        background-position: center;
+        height: 60vh;
+      "
+    >
+      <div class="container d-flex align-items-center justify-content-center h-100">
+        <div>
+          <h1 class="display-4 fw-bold">Macon County Recreation</h1>
+          <p class="lead">
+            Engaging Our Community Through Recreation
+          </p>
+        </div>
+      </div>
+    </header>
+
+    <main class="container py-5">
+      <section class="page-section" id="recreation">
+        <div class="container px-4 px-lg-5">
+          <h2 class="text-center text-dark mt-0">
+            Macon County Recreation
+          </h2>
+          <hr class="divider divider-light" />
+          <p class="text-muted text-center mb-4">
+            Macon County is committed to providing diverse recreational
+            opportunities for all its residents.
+          </p>
+
+          <div class="row">
+            <div class="col-lg-6">
+              <div class="mission-vision-box">
+                <h3 class="mission-vision-title">Our Mission</h3>
+                <p>
+                  To enhance the quality of life for Macon County residents by
+                  providing accessible, affordable, and diverse recreational
+                  programs and facilities.
+                </p>
+              </div>
+            </div>
+            <div class="col-lg-6">
+              <div class="mission-vision-box">
+                <h3 class="mission-vision-title">Our Vision</h3>
+                <p>
+                  To be a leading provider of recreational services, fostering
+                   healthy, active, and connected community.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="col-12">
+              <h2 class="text-center text-dark mt-0">Common Resources</h2>
+              <hr class="divider divider-light" />
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="col-lg-4 col-md-6">
+              <div class="resource-box">
+                <i class="fas fa-futbol resource-icon"></i>
+                <h3 class="resource-title">Youth Athletics</h3>
+                <p>Sports leagues and programs for children and teens.</p>
+                <a href="#" class="btn btn-outline-primary">Explore</a>
+              </div>
+            </div>
+            <div class="col-lg-4 col-md-6">
+              <div class="resource-box">
+                <i class="fas fa-wheelchair resource-icon"></i>
+                <h3 class="resource-title">Specialized Programs</h3>
+                <p>Recreational activities for individuals with disabilities.</p>
+                <a href="#" class="btn btn-outline-primary">Learn More</a>
+              </div>
+            </div>
+            <div class="col-lg-4 col-md-6">
+              <div class="resource-box">
+                <i class="fas fa-tree resource-icon"></i>
+                <h3 class="resource-title">Greenways</h3>
+                <p>
+                  Multi-use trails for walking, running, and cycling.
+                </p>
+                <a href="#" class="btn btn-outline-primary">Visit</a>
+              </div>
+            </div>
+            <div class="col-lg-4 col-md-6">
+              <div class="resource-box">
+                <i class="fas fa-building resource-icon"></i>
+                <h3 class="resource-title">Community Centers</h3>
+                <p>
+                  Facilities offering a variety of programs and activities for all
+                  ages.
+                </p>
+                <a href="#" class="btn btn-outline-primary">View Centers</a>
+              </div>
+            </div>
+             <div class="col-lg-4 col-md-6">
+              <div class="resource-box">
+                <i class="fas fa-playground resource-icon"></i>
+                <h3 class="resource-title">Inclusive Playgrounds</h3>
+                <p>
+                  Playgrounds designed to be accessible to children of all abilities.
+                </p>
+                <a href="#" class="btn btn-outline-primary">Find a Playground</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>
+
+
+
+
+
+
+
+<footer class="bg-light py-4">
+    <div class="container px-4 px-lg-5">
+        <div class="row">
+            <div class="col-lg-6 text-lg-start text-center mb-3 mb-lg-0">
+                <p class="text-muted">Copyright &copy; 2023 Macon County</p>
+            </div>
+            <div class="col-lg-6 text-lg-end text-center">
+                <a class="text-decoration-none text-muted px-3" href="#!">Privacy Policy</a>
+                <a class="text-decoration-none text-muted px-3" href="#!">Terms of Use</a>
+                <a class="text-decoration-none text-muted px-3" href="contact.html">Contact</a>
+            </div>
+        </div>
+    </div>
+</footer>

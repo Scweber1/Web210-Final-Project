@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Parks | Macon County</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="styles.css" rel="stylesheet" />
+    
+    <style>
+      .park-card {
+        background-color: #f8f9fa;
+        border: 1px solid #dee2e6;
+        border-radius: 0.5rem;
+        padding: 1.5rem;
+        margin-bottom: 1.5rem;
+        transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+      }
+
+      .park-card:hover {
+        transform: translateY(-0.25rem);
+        box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.05);
+      }
+
+      .park-title {
+        color: #2c3e50;
+        font-size: 1.75rem;
+        font-weight: bold;
+        margin-bottom: 1rem;
+      }
+
+      .park-description {
+        color: #4a5568;
+        line-height: 1.6;
+        margin-bottom: 1rem;
+      }
+
+      .park-features {
+        color: #718096;
+        font-size: 1rem;
+        margin-bottom: 0.75rem;
+      }
+
+      .park-image {
+        width: 100%;
+        height: 200px;
+        object-fit: cover;
+        border-radius: 0.5rem;
+        margin-bottom: 1rem;
+      }
+
+      #park-map {
+        width: 100%;
+        height: 400px;
+        background-color: #e9ecef;
+        border-radius: 0.5rem;
+        margin-bottom: 1.5rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: #6c757d;
+        font-size: 1.2rem;
+        border: 1px solid #dee2e6;
+      }
+
+      #park-search {
+        margin-bottom: 1.5rem;
+      }
+    </style>
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+      <div class="container">
+        <a class="navbar-brand" href="#">Macon County</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarResponsive"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarResponsive">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="index.html">Home</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                href="#"
+                role="button"
+                data-bs-toggle="dropdown"
+              >
+                Government
+              </a>
+              <ul class="dropdown-menu">
+                <li>
+                  <a class="dropdown-item" href="departments.html"
+                    >Departments</a
+                  >
+                </li>
+                <li>
+                  <a class="dropdown-item" href="elected-officials.html"
+                    >Elected Officials</a
+                  >
+                </li>
+                <li>
+                  <a class="dropdown-item" href="public-records.html"
+                    >Public Records</a
+                  >
+                </li>
+              </ul>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown"
+                >Services</a
+              >
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="permits.html">Permits</a></li>
+                <li><a class="dropdown-item" href="utilities.html">Utilities</a></li>
+                <li>
+                  <a class="dropdown-item" href="waste-management.html">Waste Management</a>
+                </li>
+              </ul>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown"
+                >Community</a
+              >
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="parks.html">Parks</a></li>
+                <li><a class="dropdown-item" href="recreation.html">Recreation</a></li>
+                <li><a class="dropdown-item" href="events.html">Events</a></li>
+                <li>
+                  <a class="dropdown-item" href="#">Public Schools</a>
+                </li>
+                <li><a class="dropdown-item" href="#">Libraries</a></li>
+              </ul>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown"
+                >Visitors</a
+              >
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="tourism.html">Tourism Info</a></li>
+                <li><a class="dropdown-item" href="attractions.html">Attractions</a></li>
+                <li><a class="dropdown-item" href="hiking.html">Hiking Trails</a></li>
+                <li><a class="dropdown-item" href="maps.html">Maps</a></li>
+                <li><a class="dropdown-item" href="travel.html">Travel Tips</a></li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="contact.html">Contact</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <header
+      class="masthead text-white text-center"
+      style="
+        background-image: url('images/park.jpg');
+        background-size: cover;
+        background-position: center;
+        height: 60vh;
+      "
+    >
+      <div class="container d-flex align-items-center justify-content-center h-100">
+        <div>
+          <h1 class="display-4 fw-bold">Parks of Macon County</h1>
+          <p class="lead">
+            Explore the Natural Beauty
+          </p>
+        </div>
+      </div>
+    </header>
+
+    <main class="container py-5">
+      <section class="page-section" id="parks">
+        <div class="container px-4 px-lg-5">
+          <h2 class="text-center text-dark mt-0">Discover Our Parks</h2>
+          <hr class="divider divider-light" />
+          <p class="text-muted text-center mb-4">
+            Macon County offers a variety of parks and recreational areas for
+            residents and visitors to enjoy.
+          </p>
+
+          <div class="row">
+            <div class="col-12">
+              <div id="park-search">
+                <input
+                  type="text"
+                  class="form-control"
+                  placeholder="Search for a park..."
+                />
+              </div>
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="col-12">
+              <img src="images/parkmap.png" alt="Park Map">
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="col-lg-6 col-md-6">
+              <div class="park-card">
+                <img
+                  src="images/park1.jpg"
+                  alt="Park Name"
+                  class="park-image"
+                />
+                <h3 class="park-title">Fort Macon State Park</h3>
+                <p class="park-description">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
+                </p>
+                <p class="park-features">
+                  <strong>Features:</strong> Playground, picnic areas, walking
+                  trails
+                </p>
+                <a href="#" class="btn btn-outline-primary"
+                  >Learn More</a
+                >
+              </div>
+            </div>
+            <div class="col-lg-6 col-md-6">
+              <div class="park-card">
+                <img
+                  src="images/park2.jpg"
+                  alt="Park Name"
+                  class="park-image"
+                />
+                <h3 class="park-title">Buck Spring Park</h3>
+                <p class="park-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris</p>
+                <p class="park-features">
+                  <strong>Features:</strong> Ball fields, community center
+                </p>
+                <a href="#" class="btn btn-outline-primary"
+                  >Learn More</a
+                >
+              </div>
+            </div>
+            <div class="col-lg-6 col-md-6">
+              <div class="park-card">
+                <img
+                  src="images/park3.jpg"
+                  alt="Park Name"
+                  class="park-image"
+                />
+                <h3 class="park-title">Amerson River Park</h3>
+                <p class="park-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris</p>
+                <p class="park-features">
+                  <strong>Features:</strong> Lake, Boat Ramp
+                </p>
+                <a href="#" class="btn btn-outline-primary"
+                  >Learn More</a
+                >
+              </div>
+            </div>
+            <div class="col-lg-6 col-md-6">
+              <div class="park-card">
+                <img
+                  src="images/park4.jpg"
+                  alt="Park Name"
+                  class="park-image"
+                />
+                <h3 class="park-title">Medoc Mountain State Park</h3>
+                <p class="park-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris</p>
+                <p class="park-features">
+                  <strong>Features:</strong> Hiking Trails, Picnic Shelters
+                </p>
+                <a href="#" class="btn btn-outline-primary"
+                  >Learn More</a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>
+
+
+
+
+
+
+<footer class="bg-light py-4">
+    <div class="container px-4 px-lg-5">
+        <div class="row">
+            <div class="col-lg-6 text-lg-start text-center mb-3 mb-lg-0">
+                <p class="text-muted">Copyright &copy; 2023 Macon County</p>
+            </div>
+            <div class="col-lg-6 text-lg-end text-center">
+                <a class="text-decoration-none text-muted px-3" href="#!">Privacy Policy</a>
+                <a class="text-decoration-none text-muted px-3" href="#!">Terms of Use</a>
+                <a class="text-decoration-none text-muted px-3" href="contact.html">Contact</a>
+            </div>
+        </div>
+    </div>
+</footer>

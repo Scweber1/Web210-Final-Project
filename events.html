@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Events | Macon County</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="styles.css" rel="stylesheet" />
+    <style>
+      #upcoming-events {
+        background-color: #f8f9fa;
+        border: 1px solid #dee2e6;
+        border-radius: 0.5rem;
+        padding: 1.5rem;
+        height: 400px;
+        overflow-y: auto;
+        margin-bottom: 1.5rem;
+      }
+
+      #upcoming-events h3 {
+        font-size: 1.5rem;
+        color: #2c3e50;
+        margin-bottom: 1rem;
+      }
+
+      .event-item {
+        margin-bottom: 1rem;
+        padding-bottom: 1rem;
+        border-bottom: 1px solid #dee2e6;
+      }
+
+      .event-item h4 {
+        font-size: 1.1rem;
+        color: #34495e;
+        margin-bottom: 0.5rem;
+      }
+
+      .event-item p {
+        color: #6c757d;
+        font-size: 1rem;
+      }
+
+      #event-categories {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+        gap: 1rem;
+        margin-bottom: 1.5rem;
+      }
+
+      .category-box {
+        background-color: #ffffff;
+        border: 1px solid #dee2e6;
+        border-radius: 0.5rem;
+        padding: 1rem;
+        text-align: center;
+        transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+        color: #2c3e50;
+        font-weight: bold;
+      }
+
+      .category-box:hover {
+        transform: translateY(-0.25rem);
+        box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.05);
+      }
+
+      .search-bar {
+        margin-bottom: 1.5rem;
+      }
+      .page-link {
+        color: #007bff;
+      }
+      .page-item.active .page-link {
+        background-color: #007bff;
+        border-color: #007bff;
+        color: #fff;
+      }
+    </style>
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+      <div class="container">
+        <a class="navbar-brand" href="#">Macon County</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarResponsive"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarResponsive">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="index.html">Home</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                href="#"
+                role="button"
+                data-bs-toggle="dropdown"
+              >
+                Government
+              </a>
+              <ul class="dropdown-menu">
+                <li>
+                  <a class="dropdown-item" href="departments.html"
+                    >Departments</a
+                  >
+                </li>
+                <li>
+                  <a class="dropdown-item" href="elected-officials.html"
+                    >Elected Officials</a
+                  >
+                </li>
+                <li>
+                  <a class="dropdown-item" href="public-records.html"
+                    >Public Records</a
+                  >
+                </li>
+              </ul>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown"
+                >Services</a
+              >
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="permits.html">Permits</a></li>
+                <li><a class="dropdown-item" href="utilities.html">Utilities</a></li>
+                <li>
+                  <a class="dropdown-item" href="waste-management.html">Waste Management</a>
+                </li>
+              </ul>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown"
+                >Community</a
+              >
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="parks.html">Parks</a></li>
+                <li><a class="dropdown-item" href="recreation.html">Recreation</a></li>
+                <li><a class="dropdown-item" href="events.html">Events</a></li>
+                <li>
+                  <a class="dropdown-item" href="public-schools.html">Public Schools</a>
+                </li>
+                <li><a class="dropdown-item" href="libraries.html">Libraries</a></li>
+              </ul>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown"
+                >Visitors</a
+              >
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="tourism.html">Tourism Info</a></li>
+                <li><a class="dropdown-item" href="attractions.html">Attractions</a></li>
+                <li><a class="dropdown-item" href="hiking.html">Hiking Trails</a></li>
+                <li><a class="dropdown-item" href="maps.html">Maps</a></li>
+                <li><a class="dropdown-item" href="travel.html">Travel Tips</a></li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="contact.html">Contact</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <header
+      class="masthead text-white text-center"
+      style="
+        background-image: url('images/friends2.jpg');
+        background-size: cover;
+        background-position: center;
+        height: 60vh;
+      "
+    >
+      <div class="container d-flex align-items-center justify-content-center h-100">
+        <div>
+          <h1 class="display-4 fw-bold">Events in Macon County</h1>
+          <p class="lead">
+            Discover the vibrant community life of Macon County!  We are known for our
+            strong sense of community and a wide variety of events.
+          </p>
+        </div>
+      </div>
+    </header>
+
+    <main class="container py-5">
+      <section class="page-section" id="events">
+        <div class="container px-4 px-lg-5">
+          <h2 class="text-center text-dark mt-0">
+            Upcoming Events
+          </h2>
+          <hr class="divider divider-light" />
+
+          <div class="row">
+            <div class="col-md-8">
+              <div class="search-bar">
+                <div class="input-group">
+                  <input
+                    type="text"
+                    class="form-control"
+                    placeholder="Type of Event"
+                  />
+                  <input type="date" class="form-control" />
+                  <button class="btn btn-primary" type="button">
+                    Search
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+          
+          <div class="row">
+            <div class="col-lg-8 col-md-8">
+                <div id="upcoming-events">
+                    <h3>Upcoming Events</h3>
+                    <div class="event-item">
+                    <h4>Strawberry Social & Craft Fair</h4>
+                    <p>Date: May 3, 2025</p>
+                    <p>Location: Whispering Pines Farm </p>
+                    </div>
+                    <div class="event-item">
+                    <h4>Family Movie Night in the Park</h4>
+                    <p>Date: May 6 , 2025</p>
+                    <p>Location: Macon County Park</p>
+                    </div>
+                    <div class="event-item">
+                    <h4>Vendor's Market</h4>
+                    <p>Date: May 10, 2025</p>
+                    <p>Location: The Old Mill Commons </p>
+                    </div>
+                    <nav aria-label="Page navigation example">
+                        <ul class="pagination">
+                            <li class="page-item">
+                                <a class="page-link" href="#" aria-label="Previous">
+                                    <span aria-hidden="true">&laquo;</span>
+                                </a>
+                            </li>
+                            <li class="page-item"><a class="page-link" href="#">1</a></li>
+                            <li class="page-item"><a class="page-link" href="#">2</a></li>
+                            <li class="page-item"><a class="page-link" href="#">3</a></li>
+                            <li class="page-item">
+                                <a class="page-link" href="#" aria-label="Next">
+                                    <span aria-hidden="true">&raquo;</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-4">
+                <div id="event-categories">
+                    <div class="category-box">Annual Events</div>
+                    <div class="category-box">Environmental Events</div>
+                    <div class="category-box">Concerts</div>
+                    <div class="category-box">Town Halls</div>
+                    <div class="category-box">Career Fairs</div>
+                    <div class="category-box">Arts & Entertainment</div>
+                </div>
+            </div>
+          </div>
+          <div class="row mt-5">
+            <div class="col-12 text-center">
+                <a href="#">Event Policies</a> | <a href="#">Special Event Request Form</a>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>
+
+
+
+
+
+
+<footer class="bg-light py-4">
+    <div class="container px-4 px-lg-5">
+        <div class="row">
+            <div class="col-lg-6 text-lg-start text-center mb-3 mb-lg-0">
+                <p class="text-muted">Copyright &copy; 2023 Macon County</p>
+            </div>
+            <div class="col-lg-6 text-lg-end text-center">
+                <a class="text-decoration-none text-muted px-3" href="#!">Privacy Policy</a>
+                <a class="text-decoration-none text-muted px-3" href="#!">Terms of Use</a>
+                <a class="text-decoration-none text-muted px-3" href="contact.html">Contact</a>
+            </div>
+        </div>
+    </div>
+</footer>
