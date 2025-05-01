@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Travel Tips for Macon County, NC</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="styles.css" rel="stylesheet" />
+    <style>
+        /* Your custom styles for the cards and horizontal scrolling */
+        h2 {
+            color: #2c3e50;
+            margin-bottom: 20px;
+        }
+        .card {
+            margin-right: 20px;
+            border: 1px solid #dee2e6;
+            border-radius: 0.5rem;
+            box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075);
+            flex: 0 0 auto;
+            width: 300px; /* Adjust card width as needed */
+        }
+        .card-body {
+            padding: 1.5rem;
+        }
+        .card-title {
+            font-size: 1.5rem;
+            color: #2c3e50;
+            margin-bottom: 0.75rem;
+        }
+        .card-text {
+            color: #4a5568;
+            margin-bottom: 1rem;
+        }
+        .card-link {
+            color: #007bff;
+            text-decoration: none;
+        }
+        .card-link:hover {
+            text-decoration: underline;
+        }
+        .horizontal-scroll-wrapper {
+            display: flex;
+            overflow-x: auto;
+            padding-bottom: 15px;
+            margin-bottom: 30px; /* Space between content sections */
+            -webkit-overflow-scrolling: touch;
+        }
+        .card-img-top {
+            max-height: 150px;
+            object-fit: cover;
+            border-top-left-radius: 0.5rem;
+            border-top-right-radius: 0.5rem;
+        }
+    </style>
+</head>
+
+<body>
+
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container">
+            <img src="images/mock-mac.png" alt="Macon County Logo" height="50" class="me-2">
+            <a class="navbar-brand" href="#">Macon County</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarResponsive">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">
+                            Government
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="departments.html">Departments</a></li>
+                            <li><a class="dropdown-item" href="elected-officials.html">Elected Officials</a></li>
+                            <li><a class="dropdown-item" href="public-records.html">Public Records</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">Services</a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="permits.html">Permits</a></li>
+                            <li><a class="dropdown-item" href="utilities.html">Utilities</a></li>
+                            <li>
+                                <a class="dropdown-item" href="waste-management.html">Waste Management</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">Community</a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="parks.html">Parks</a></li>
+                            <li><a class="dropdown-item" href="recreation.html">Recreation</a></li>
+                            <li><a class="dropdown-item" href="events.html">Events</a></li>
+                            <li>
+                                <a class="dropdown-item" href="public-schools.html">Public Schools</a>
+                            </li>
+                            <li><a class="dropdown-item" href="libraries.html">Libraries</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">Visitors</a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="tourism.html">Tourism Info</a></li>
+                            <li><a class="dropdown-item" href="attractions.html">Attractions</a></li>
+                            <li><a class="dropdown-item" href="hiking.html">Hiking Trails</a></li>
+                            <li><a class="dropdown-item" href="maps.html">Maps</a></li>
+                            <li><a class="dropdown-item" href="travel.html">Travel Tips</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact.html">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <header class="masthead text-white text-center" style="background-image: url('images/safety.jpg'); background-size: cover; background-position: center; height: 40vh;">
+        <div class="container d-flex align-items-center justify-content-center h-100">
+            <div>
+                <h1 class="display-4 fw-bold">Travel Tips for Macon County</h1>
+                <p class="lead">Helpful advice for a safe and enjoyable visit.</p>
+            </div>
+        </div>
+    </header>
+
+    <div class="container mt-4">
+        <h2>General Travel & Safety Tips</h2>
+        <p class="lead text-center">Make the most of your trip to Macon County with these helpful guidelines.</p>
+
+        <section id="general-safety" class="mb-4">
+            <h2>General Safety</h2>
+            <div class="horizontal-scroll-wrapper">
+                <div class="card">
+                    <img src="images/rain.jpg" alt="Check Weather" class="card-img-top">
+                    <div class="card-body">
+                        <h5 class="card-title">Check the Weather</h5>
+                        <p class="card-text">Be aware of current and forecast weather conditions, especially in the mountains. Dress accordingly.</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="images/hydrate.jpg" alt="Stay Hydrated" class="card-img-top">
+                    <div class="card-body">
+                        <h5 class="card-title">Stay Hydrated</h5>
+                        <p class="card-text">Carry water, especially if you're hiking or spending time outdoors. Mountain air can be deceivingly dry.</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="images/bandaid.jpg" alt="First Aid Kit" class="card-img-top">
+                    <div class="card-body">
+                        <h5 class="card-title">Carry a Basic First Aid Kit</h5>
+                        <p class="card-text">Include essentials like bandages, antiseptic wipes, pain relievers, and any personal medications.</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="images/plans.jpg" alt="Inform Someone" class="card-img-top">
+                    <div class="card-body">
+                        <h5 class="card-title">Inform Someone of Your Plans</h5>
+                        <p class="card-text">Especially if you're going hiking, let someone know your route and expected return time.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="driving-tips" class="mb-4">
+            <h2>Driving Tips</h2>
+            <div class="horizontal-scroll-wrapper">
+                <div class="card">
+                    <img src="images/road.jpg" alt="Mountain Roads" class="card-img-top">
+                    <div class="card-body">
+                        <h5 class="card-title">Drive Carefully on Mountain Roads</h5>
+                        <p class="card-text">Expect winding roads, steep inclines, and potential wildlife. Drive at a safe speed.</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="images/parking.jpg" alt="Parking Regulations" class="card-img-top">
+                    <div class="card-body">
+                        <h5 class="card-title">Observe Parking Regulations</h5>
+                        <p class="card-text">Be mindful of parking signs, especially at popular trailheads and scenic overlooks.</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="images/gas.jpg" alt="Fuel Up" class="card-img-top">
+                    <div class="card-body">
+                        <h5 class="card-title">Keep Your Fuel Tank Full</h5>
+                        <p class="card-text">Gas stations can be less frequent in more remote areas of the county.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="wildlife-awareness" class="mb-4">
+            <h2>Wildlife Awareness</h2>
+            <div class="horizontal-scroll-wrapper">
+                <div class="card">
+                    <img src="images/bear.jpg" alt="Bear Safety" class="card-img-top">
+                    <div class="card-body">
+                        <h5 class="card-title">Be Aware of Bears</h5>
+                        <p class="card-text">Store food properly and make noise while hiking in bear country. Never approach or feed bears.</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="images/skunk.jpg" alt="Other Wildlife" class="card-img-top">
+                    <div class="card-body">
+                        <h5 class="card-title">Respect Other Wildlife</h5>
+                        <p class="card-text">Observe animals from a distance and never disturb their natural habitat.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <p class="text-center mt-4">By following these tips, you can ensure a safer and more enjoyable experience in Macon County!</p>
+        <p class="text-center">For more detailed safety guidelines, please refer to local park and tourism resources.</p>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+<footer class="bg-light py-4">
+    <div class="container px-4 px-lg-5">
+        <div class="row">
+            <div class="col-lg-6 text-lg-start text-center mb-3 mb-lg-0">
+                <p class="text-muted">Copyright &copy; 2023 Macon County</p>
+            </div>
+            <div class="col-lg-6 text-lg-end text-center">
+                <a class="text-decoration-none text-muted px-3" href="#!">Privacy Policy</a>
+                <a class="text-decoration-none text-muted px-3" href="#!">Terms of Use</a>
+                <a class="text-decoration-none text-muted px-3" href="contact.html">Contact</a>
+            </div>
+        </div>
+    </div>
+</footer>

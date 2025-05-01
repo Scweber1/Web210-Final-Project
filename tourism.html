@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tourism Information for Macon County, NC</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="styles.css" rel="stylesheet" />
+    <style>
+        /* styles for cards and horizontal scrolling */
+        h2 {
+            color: #2c3e50;
+            margin-bottom: 20px;
+        }
+        .card {
+            margin-right: 20px;
+            border: 1px solid #dee2e6;
+            border-radius: 0.5rem;
+            box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075);
+            flex: 0 0 auto;
+            width: 300px; 
+        }
+        .card-body {
+            padding: 1.5rem;
+        }
+        .card-title {
+            font-size: 1.5rem;
+            color: #2c3e50;
+            margin-bottom: 0.75rem;
+        }
+        .card-text {
+            color: #4a5568;
+            margin-bottom: 1rem;
+        }
+        .card-link {
+            color: #007bff;
+            text-decoration: none;
+        }
+        .card-link:hover {
+            text-decoration: underline;
+        }
+        .horizontal-scroll-wrapper {
+            display: flex;
+            overflow-x: auto;
+            padding-bottom: 15px;
+            margin-bottom: 30px; /* Space between content sections */
+            -webkit-overflow-scrolling: touch;
+        }
+    </style>
+</head>
+
+<body>
+
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container">
+            <img src="images/mock-mac.png" alt="Macon County Logo" height="50" class="me-2">
+            <a class="navbar-brand" href="#">Macon County</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarResponsive">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">
+                            Government
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="departments.html">Departments</a></li>
+                            <li><a class="dropdown-item" href="elected-officials.html">Elected Officials</a></li>
+                            <li><a class="dropdown-item" href="public-records.html">Public Records</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">Services</a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="permits.html">Permits</a></li>
+                            <li><a class="dropdown-item" href="utilities.html">Utilities</a></li>
+                            <li>
+                                <a class="dropdown-item" href="waste-management.html">Waste Management</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">Community</a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="parks.html">Parks</a></li>
+                            <li><a class="dropdown-item" href="recreation.html">Recreation</a></li>
+                            <li><a class="dropdown-item" href="events.html">Events</a></li>
+                            <li>
+                                <a class="dropdown-item" href="public-schools.html">Public Schools</a>
+                            </li>
+                            <li><a class="dropdown-item" href="libraries.html">Libraries</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">Visitors</a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="tourism.html">Tourism Info</a></li>
+                            <li><a class="dropdown-item" href="attractions.html">Attractions</a></li>
+                            <li><a class="dropdown-item" href="hiking.html">Hiking Trails</a></li>
+                            <li><a class="dropdown-item" href="maps.html">Maps</a></li>
+                            <li><a class="dropdown-item" href="travel.html">Travel Tips</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact.html">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <header class="masthead text-white text-center" style="background-image: url('images/travel.jpg'); background-size: cover; background-position: center; height: 60vh;">
+        <div class="container d-flex align-items-center justify-content-center h-100">
+            <div>
+                <h1 class="display-4 fw-bold">Explore Macon</h1>
+                <p class="lead">Discover the beauty and charm of the Blude Ridge Mountains</p>
+            </div>
+        </div>
+    </header>
+
+    <div class="container mt-4">
+
+        <section id="accommodations" class="mb-4">
+            <h2>Accommodations</h2>
+            <div class="horizontal-scroll-wrapper">
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title">Hotels & Motels</h5>
+                        <p class="card-text">Comfortable and convenient lodging options.</p>
+                        <a href="#" class="card-link">[Link to Hotel Listings]</a>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title">Cabins & Vacation Rentals</h5>
+                        <p class="card-text">Privacy and scenic mountain views.</p>
+                        <a href="#" class="card-link">[Link to Cabin/Rental Listings]</a>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title">Bed & Breakfasts</h5>
+                        <p class="card-text">Experience Southern hospitality.</p>
+                        <a href="#" class="card-link">[Link to B&B Listings]</a>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title">Campgrounds & RV Parks</h5>
+                        <p class="card-text">Immerse yourself in nature.</p>
+                        <a href="#" class="card-link">[Link to Camping Info]</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="dining" class="mb-4">
+            <h2>Dining</h2>
+            <div class="horizontal-scroll-wrapper">
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title">Local Restaurants</h5>
+                        <p class="card-text">Fresh, local ingredients and diverse cuisines.</p>
+                        <a href="#" class="card-link">[Link to Restaurant Guide]</a>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title">Casual Dining & Cafes</h5>
+                        <p class="card-text">Relaxed meals and quick bites.</p>
+                        <a href="#" class="card-link">[Link to Casual Dining]</a>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title">Fine Dining</h5>
+                        <p class="card-text">Elegant and upscale dining experiences.</p>
+                        <a href="#" class="card-link">[Link to Fine Dining]</a>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title">Breweries & Wineries</h5>
+                        <p class="card-text">Local craft beverages in scenic settings.</p>
+                        <a href="#" class="card-link">[Link to Breweries & Wineries]</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="outdoor-adventures" class="mb-4">
+            <h2>Outdoor Adventures</h2>
+            <div class="horizontal-scroll-wrapper">
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title">Hiking & Trails</h5>
+                        <p class="card-text">Scenic trails for all skill levels.</p>
+                        <a href="#" class="card-link">[Link to Hiking Trails]</a>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title">Water Activities</h5>
+                        <p class="card-text">Kayaking, fishing, and swimming.</p>
+                        <a href="#" class="card-link">[Link to Water Activities]</a>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title">Fishing</h5>
+                        <p class="card-text">Excellent trout streams and fishing spots.</p>
+                        <a href="#" class="card-link">[Link to Fishing Info]</a>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title">Scenic Drives</h5>
+                        <p class="card-text">Breathtaking routes like the Blue Ridge Parkway.</p>
+                        <a href="#" class="card-link">[Link to Scenic Drives]</a>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title">Gem Mining</h5>
+                        <p class="card-text">The thrill of finding your own gems.</p>
+                        <a href="#" class="card-link">[Link to Gem Mining]</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="wedding-venues" class="mb-4">
+            <h2>Wedding Venues</h2>
+            <div class="horizontal-scroll-wrapper">
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title">Barns & Farms</h5>
+                        <p class="card-text">Rustic and charming wedding locations.</p>
+                        <a href="#" class="card-link">[Link to Barn Venues]</a>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title">Outdoor Venues</h5>
+                        <p class="card-text">Beautiful mountain settings for your ceremony.</p>
+                        <a href="#" class="card-link">[Link to Outdoor Venues]</a>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title">Event Centers & Halls</h5>
+                        <p class="card-text">Spacious venues for your reception.</p>
+                        <a href="#" class="card-link">[Link to Event Centers]</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="museums-history" class="mb-4">
+            <h2>Museums & History</h2>
+            <div class="horizontal-scroll-wrapper">
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title">Macon County Historical Society Museum</h5>
+                        <p class="card-text">Discover the heritage of the region.</p>
+                        <a href="#" class="card-link">[Link to Historical Society]</a>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title">[Other Local Museums/Sites]</h5>
+                        <p class="card-text">[Brief description and link]</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title">Cherokee Heritage</h5>
+                        <p class="card-text">Explore the history of the Cherokee people.</p>
+                        <a href="#" class="card-link">[Link to Cherokee Heritage]</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="family-fun" class="mb-4">
+            <h2>Family Fun</h2>
+            <div class="horizontal-scroll-wrapper">
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title">Parks & Playgrounds</h5>
+                        <p class="card-text">Enjoy local parks and recreational areas.</p>
+                        <a href="#" class="card-link">[Link to Local Parks]</a>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title">Mini Golf & Arcades</h5>
+                        <p class="card-text">Fun for the whole family.</p>
+                        <a href="#" class="card-link">[Link to Mini Golf/Arcades]</a>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title">Educational Activities</h5>
+                        <p class="card-text">Engaging learning experiences.</p>
+                        <a href="#" class="card-link">[Link to Educational Activities]</a>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title">Seasonal Events</h5>
+                        <p class="card-text">Family-friendly festivals and events.</p>
+                        <a href="#" class="card-link">[Link to Events Calendar]</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <p class="text-center mt-4">For more information and to plan your visit, please visit the official Macon County Tourism website: <a href="#">[Link to Official Tourism Website]</a></p>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+<footer class="bg-light py-4">
+    <div class="container px-4 px-lg-5">
+        <div class="row">
+            <div class="col-lg-6 text-lg-start text-center mb-3 mb-lg-0">
+                <p class="text-muted">Copyright &copy; 2023 Macon County</p>
+            </div>
+            <div class="col-lg-6 text-lg-end text-center">
+                <a class="text-decoration-none text-muted px-3" href="#!">Privacy Policy</a>
+                <a class="text-decoration-none text-muted px-3" href="#!">Terms of Use</a>
+                <a class="text-decoration-none text-muted px-3" href="contact.html">Contact</a>
+            </div>
+        </div>
+    </div>
+</footer>
+</html>
+
+  
